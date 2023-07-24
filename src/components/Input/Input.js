@@ -23,7 +23,7 @@ const Input = ({ onSendMessage }) => {
                 onChange={e => onChange(e)}
                 margin="normal"
                 value={text}
-                onKeyPress={event => {
+                onKeyPress={(event) => {
                     if (event.key === 'Enter') {
                         onSubmit(text);
                     }

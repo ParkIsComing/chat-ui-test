@@ -16,6 +16,8 @@ const chatAPI = {
             sender: username,
             content: text
         }
+
+        console.log(msg);
         return api.post(`send`, msg);
     }
 }
