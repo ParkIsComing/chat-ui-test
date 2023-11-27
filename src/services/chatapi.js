@@ -13,8 +13,11 @@ const chatAPI = {
 
     sendMessage: (username, text) => {
         let msg = {
-            sender: username,
-            content: text
+            roomId: 2,
+            contentType: "talk",
+            type: 0,
+            content: "안녕",
+            isRead : false
         }
 
         console.log(msg);
